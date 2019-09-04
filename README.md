@@ -89,8 +89,8 @@ create table cleanrequests(agentName varchar(50) not null primary key, poolName 
 2. You can place agent_pool_config.json to any directory in your local computer
 3. Edit application.properties file 
    - Edit “logging.path” to a directory to contain your application log and create the directory
-   - Edit “spring.datasource.url” to jdbc:mysql://<serverName>.mysql.database.chinacloudapi.cn:3306/<dbName>?serverTimezone=UTC&useSSL=true&requireSSL=false&verifyServerCertificate=true
-   - Edit “spring.datasource.username” to <userName>@<serverName>
+   - Edit “spring.datasource.url” to jdbc:mysql://\<serverName\>.mysql.database.chinacloudapi.cn:3306/\<dbName\>?serverTimezone=UTC&useSSL=true&requireSSL=false&verifyServerCertificate=true
+   - Edit “spring.datasource.username” to \<userName\>@\<serverName\>
    - Edit “spring.datasource.password” to your password of MySQL
    - Edit “config.agentpool” to the file path of agent_pool_config.json where it’s placed
    - Edit “devops.server.url” to the URL of DevOps server cluster
