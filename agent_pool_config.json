@@ -1,0 +1,23 @@
+{
+    "azure": {
+        "armTemplateUrl": "your_template_url",
+        "subscriptionId": "your_subscription_id",
+        "servicePrinciple": {
+            "clientId": "your_client_id",
+            "tenantId": "your_tenant_id",
+            "clientKey": "your_client_secret"
+        }
+    },
+    "pools": [
+        {
+            "poolName": "pool1_name",
+            "agentQuota": 2,
+            "parameterUrl": "parameters.json for pool1"
+        }, 
+        {
+            "poolName": "pool2_name",
+            "agentQuota": 1,
+            "parameterUrl": "parameters.json for pool2"
+        }
+    ]
+}
