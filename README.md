@@ -37,21 +37,19 @@ Users can send a request to http://cleanresources trigger this API to clean up A
 1.	Download mysqlsh from https://dev.mysql.com/downloads/shell/
 2.	Start mysqlsh in local console
 3.	In mysqlsh command, input following commands:
-    a.	\connect <userName>%40<serverName>:<password>@<serverName>.mysql.database.chinacloudapi.cn
-    b.	\sql
-    c.	create database <dbName>;
-    d.	use <dbName>;
-    e.	create agents table with following command:
+    - \connect <userName>%40<serverName>:<password>@<serverName>.mysql.database.chinacloudapi.cn
+    - \sql
+    - create database <dbName>;
+    - use <dbName>;
+    - create "agents" and "cleanrequests" table with following command:
 
 ```sql
 create table agents(agentName varchar(50) not null primary key, poolName varchar(50) not null, resourceGroupName varchar(50) not null, vmName varchar(50) not null);
 ```
-
-    f.	create cleanrequests table
+    
 ```sql
 create table cleanrequests(agentName varchar(50) not null primary key, poolName varchar(50) not null, vmName varchar(50) not null, resourceGroupName varchar(50) not null, requestTime varchar(35) not null);
 ```
-    g.	show tables;
 
 ### Uploading scripts and DevOps agent package
 1. Ensure the following shell scripts are uploaded to an Azure storage account:
