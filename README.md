@@ -37,7 +37,7 @@ Users can send a request to http://cleanresources trigger this API to clean up A
 1.	Download mysqlsh from https://dev.mysql.com/downloads/shell/
 2.	Start mysqlsh in local console
 3.	In mysqlsh command, input following commands:
-    - \connect <userName>%40<serverName>:<password>@<serverName>.mysql.database.chinacloudapi.cn
+    - \connect \<userName\>%40\<serverName\>:\<password\>@\<serverName\>.mysql.database.chinacloudapi.cn
     - \sql
     - create database <dbName>;
     - use <dbName>;
